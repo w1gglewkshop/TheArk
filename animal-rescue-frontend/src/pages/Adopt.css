@@ -1,0 +1,106 @@
+.adopt-main {
+  background: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 32px 20px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.adopt-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1a2e22;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.adopt-filter {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+.adopt-filter button {
+  background: #f7f7f7;
+  color: #1a7f5a;
+  border: 2px solid #1a7f5a;
+  border-radius: 6px;
+  padding: 8px 22px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.adopt-filter button.active, .adopt-filter button:hover {
+  background: #1a7f5a;
+  color: #fff;
+}
+.adopt-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+}
+.adopt-card {
+  background: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(26,127,90,0.06);
+  width: 260px;
+  padding: 18px 14px 18px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.18s, box-shadow 0.18s;
+  cursor: pointer;
+}
+.adopt-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(26,127,90,0.14);
+}
+.adopt-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(26,127,90,0.10);
+  margin-bottom: 8px;
+}
+.adopt-info h3 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  color: #1a7f5a;
+}
+.adopt-meta {
+  font-size: 0.98rem;
+  color: #888;
+  margin-bottom: 4px;
+}
+.adopt-info p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+.adopt-btn {
+  background: #1a7f5a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.18s;
+  margin-top: 8px;
+  display: inline-block;
+}
+.adopt-btn:hover {
+  background: #145c3f;
+}
+@media (max-width: 700px) {
+  .adopt-grid {
+    gap: 16px;
+  }
+  .adopt-card {
+    width: 98vw;
+    max-width: 340px;
+  }
+} 

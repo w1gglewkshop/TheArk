@@ -1,0 +1,73 @@
+.events-main {
+  background: #fff;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 20px 32px 20px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.events-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1a2e22;
+  margin-bottom: 24px;
+  text-align: center;
+}
+.events-list {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  align-items: center;
+}
+.event-card {
+  background: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(26,127,90,0.06);
+  width: 100%;
+  max-width: 500px;
+  padding: 24px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+  transition: box-shadow 0.18s;
+}
+.event-card:hover {
+  box-shadow: 0 6px 24px rgba(26,127,90,0.14);
+}
+.event-date {
+  font-size: 1.05rem;
+  color: #1a7f5a;
+  font-weight: 700;
+}
+.event-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1a2e22;
+}
+.event-desc {
+  color: #444;
+  font-size: 1rem;
+}
+.event-location {
+  color: #888;
+  font-size: 0.98rem;
+}
+.event-rsvp {
+  background: #1a7f5a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 8px;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.event-rsvp:hover {
+  background: #145c3f;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+} 

@@ -1,0 +1,107 @@
+.blog-main {
+  background: #fff;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 20px 32px 20px;
+  font-family: 'Inter', Arial, sans-serif;
+}
+.blog-title {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #1a2e22;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.blog-featured {
+  background: #f7f7f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 10px rgba(26,127,90,0.06);
+  max-width: 900px;
+  margin: 0 auto 32px auto;
+  padding: 32px 24px;
+  text-align: center;
+  animation: fadeInUp 1.1s 0.1s cubic-bezier(0.4,0,0.2,1);
+}
+.blog-featured-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+@media (min-width: 700px) {
+  .blog-featured-content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+  .blog-img {
+    margin-right: 18px;
+  }
+}
+.blog-posts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s cubic-bezier(0.4,0,0.2,1);
+}
+.blog-card {
+  display: flex;
+  gap: 24px;
+  background: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(26,127,90,0.06);
+  padding: 18px;
+  align-items: center;
+  animation: fadeInUp 1.1s 0.1s cubic-bezier(0.4,0,0.2,1);
+}
+.blog-img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(26,127,90,0.10);
+}
+.blog-content {
+  flex: 1;
+}
+.blog-date {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 6px;
+}
+.blog-post-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1a7f5a;
+  margin-bottom: 4px;
+}
+.blog-excerpt {
+  font-size: 1rem;
+  color: #444;
+}
+.blog-share {
+  margin-top: 40px;
+  text-align: center;
+  animation: fadeInUp 1.1s 0.2s cubic-bezier(0.4,0,0.2,1);
+  background: #f7f7f7;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(26,127,90,0.06);
+  padding: 32px 24px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.blog-share-link {
+  color: #1a7f5a;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.blog-share-link:hover {
+  color: #145c3f;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+} 
